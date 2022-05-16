@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OS 9</name>
+    </assembly>
+    <members>
+        <member name="T:OS_9.Form1">
+            
+             @brief Класс для формы проекта
+             
+             Реализует интерфейс программы
+             
+        </member>
+        <member name="M:OS_9.Form1.#ctor">
+            <summary>
+            Форма
+            Программа реализует работу нескольких функций параллельно, через потоки
+            Одна часть программы рисует квадраты, вторая считает числа и выводит их на форму
+            Так же во время выполнения программы есть возможность вручную вводить цифры на форму в textbox
+            </summary>
+        </member>
+        <member name="M:OS_9.Form1.SetText(System.String)">
+            <summary>
+            Функция возвращающая текст
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:OS_9.Form1.button5_Click(System.Object,System.EventArgs)">
+            <summary>
+            Старт потоков
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OS_9.Form1.MyThread">
+            <summary>
+            метод для работы с потоками
+            </summary>
+        </member>
+        <member name="M:OS_9.Form1.threadsDraw">
+            <summary>
+            поток для рисования
+            </summary>
+        </member>
+        <member name="M:OS_9.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Метод отвечающий за загрузку формы
+            Создает таблицу и объект thread
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OS_9.Form1.button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            Метод для удаления потока
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OS_9.Form1.dataGridView1_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Метод для работы с приоритетами потоков
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OS_9.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Инициализация приоритета потоков рисования
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            ![Описание метода](image.png)
+        </member>
+        <member name="F:OS_9.Form1.components">
+            <summary>
+            Обязательная переменная конструктора.
+            </summary>
+        </member>
+        <member name="M:OS_9.Form1.Dispose(System.Boolean)">
+            <summary>
+            Освободить все используемые ресурсы.
+            </summary>
+            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        </member>
+        <member name="M:OS_9.Form1.InitializeComponent">
+            <summary>
+            Требуемый метод для поддержки конструктора — не изменяйте 
+            содержимое этого метода с помощью редактора кода.
+            </summary>
+        </member>
+        <member name="T:OS_9.Square">
+            
+             @brief Класс для рисования объектов
+             
+             Имеет все нужные кисти, цвета и другие объекты для рисования.
+             Рисует объект в случайной точке случайным цветом
+            
+        </member>
+        <member name="M:OS_9.Program.Main">
+            <summary>
+            Главная точка входа для приложения.
+            </summary>
+        </member>
+        <member name="T:OS_9.Properties.Resources">
+            <summary>
+              Класс ресурсов со строгим типом для поиска локализованных строк и пр.
+            </summary>
+        </member>
+        <member name="P:OS_9.Properties.Resources.ResourceManager">
+            <summary>
+              Возврат кэшированного экземпляра ResourceManager, используемого этим классом.
+            </summary>
+        </member>
+        <member name="P:OS_9.Properties.Resources.Culture">
+            <summary>
+              Переопределяет свойство CurrentUICulture текущего потока для всех
+              подстановки ресурсов с помощью этого класса ресурсов со строгим типом.
+            </summary>
+        </member>
+    </members>
+</doc>

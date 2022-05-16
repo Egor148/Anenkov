@@ -1,0 +1,22 @@
+C:\Users\Егор\source\repos\OS 9\OS 9\bin\Debug\OS 9.exe.config
+C:\Users\Егор\source\repos\OS 9\OS 9\bin\Debug\OS 9.exe
+C:\Users\Егор\source\repos\OS 9\OS 9\bin\Debug\OS 9.pdb
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS 9.csprojAssemblyReference.cache
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS_9.Form1.resources
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS_9.Properties.Resources.resources
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS 9.csproj.GenerateResource.cache
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS 9.csproj.CoreCompileInputs.cache
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS 9.exe
+C:\Users\Егор\source\repos\OS 9\OS 9\obj\Debug\OS 9.pdb
+C:\Users\Егор\source\repos\OS 9\OS 9\bin\Debug\OS 9.xml
+C:\Project_Code\OS 9\OS 9\bin\Debug\OS 9.exe.config
+C:\Project_Code\OS 9\OS 9\bin\Debug\OS 9.xml
+C:\Project_Code\OS 9\OS 9\bin\Debug\OS 9.exe
+C:\Project_Code\OS 9\OS 9\bin\Debug\OS 9.pdb
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS 9.csprojAssemblyReference.cache
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS_9.Form1.resources
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS_9.Properties.Resources.resources
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS 9.csproj.GenerateResource.cache
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS 9.csproj.CoreCompileInputs.cache
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS 9.exe
+C:\Project_Code\OS 9\OS 9\obj\Debug\OS 9.pdb

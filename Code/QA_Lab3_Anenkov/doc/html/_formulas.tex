@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+\pagestyle{empty}
+\begin{document}
+$ points[]$
+\pagebreak
+
+\[
+     points[0].X = rand.Next(0, pictureWidth / 2); points[0].Y = rand.Next(0, pictureHeight / 2);
+\]
+\pagebreak
+
+$ color$
+\pagebreak
+
+\[
+     color = Color.FromArgb(rand.Next(250), rand.Next(250), rand.Next(250));
+\]
+\pagebreak
+
+\end{document}
