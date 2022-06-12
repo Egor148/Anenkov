@@ -213,7 +213,16 @@ namespace kurs_valut
                 val.his[i] = s;
             }
         }
+        public void his_Replace()
+        {
+            for (int i = 0; i < val.his.Count; i++)
+            {
+                string s = val.his[i];
 
+                s = s.Replace(".", "/");
+                val.his[i] = s;
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             textBox2.Clear();
