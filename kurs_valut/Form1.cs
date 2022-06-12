@@ -12,10 +12,10 @@ namespace kurs_valut
 {
     public partial class Form1 : Form
     {
+        double c1, c2;
         public Form1()
         {
             InitializeComponent();
-            double c1 = 0, c2;
             //объект класса Valute
             Valute val = new Valute();
         }
@@ -42,6 +42,26 @@ namespace kurs_valut
                 }
             }
             return "";
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedState = comboBox2.SelectedItem.ToString();
+            if (selectedState != "RUB")
+            {
+                string val = get_kurs(selectedState);
+                c2 = Convert.ToDouble(val);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedState = comboBox1.SelectedItem.ToString();
+            if (selectedState != "RUB")
+            {
+                string val = get_kurs(selectedState);
+                c1 = Convert.ToDouble(val);
+            }
         }
     }
 }
