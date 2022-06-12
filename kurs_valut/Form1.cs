@@ -13,11 +13,12 @@ namespace kurs_valut
     public partial class Form1 : Form
     {
         double c1, c2;
+        Valute val = new Valute();
         public Form1()
         {
             InitializeComponent();
             //объект класса Valute
-            Valute val = new Valute();
+           // Valute val = new Valute();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,6 +43,19 @@ namespace kurs_valut
                 }
             }
             return "";
+        }
+        public void get_history_kurs(string date1, string date2, string id)
+        {
+            string url = "https://cbr.ru/scripts/XML_dynamic.asp?date_req1=" + date1 + "&date_req2=" + date2 + "&VAL_NM_RQ=" + id;
+            DataSet ds = new DataSet();
+            ds.ReadXml(url);
+            DataTable currency = ds.Tables["Record"];
+
+            foreach (DataRow row in currency.Rows)
+            {
+                val.his.Add(row["Date"].ToString());
+                val.his.Add(row["Value"].ToString());
+            }
         }
         private void kurs() //отношение курсов
         {
