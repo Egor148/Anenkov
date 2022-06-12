@@ -97,6 +97,11 @@ namespace kurs_valut
             string selectedState = comboBox2.SelectedItem.ToString();
             return selectedState;
         }
+        public string get_box3() // валюта для истории курса валюты
+        {
+            string selectedState = comboBox3.SelectedItem.ToString();
+            return selectedState;
+        }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedState = comboBox2.SelectedItem.ToString();
