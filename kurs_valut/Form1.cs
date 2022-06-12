@@ -87,6 +87,7 @@ namespace kurs_valut
                 }
             }
         }
+
         public string get_box1()//выбор comboBox1
         {
             string selectedState = comboBox1.SelectedItem.ToString();
