@@ -214,6 +214,48 @@ namespace kurs_valut
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            Replace();//функция убирающая точки из даты и вставляющая /
+            switch (get_box3())
+            {
+                case "USD":
+                    val.id = "R01235";
+                    break;
+                case "EUR":
+                    val.id = "R01239";
+                    break;
+                case "RUB":
+                    break;
+                case "BYN":
+                    val.id = "R01090B";
+                    break;
+                case "INR":
+                    val.id = "R01270";
+                    break;
+                case "KZT":
+                    val.id = "R01335";
+                    break;
+                case "CAD":
+                    val.id = "R01350";
+                    break;
+                case "CNY":
+                    val.id = "R01375";
+                    break;
+                case "UZS":
+                    val.id = "R01717";
+                    break;
+            }
+            //switch case с названием валюты и кодом
+            get_history_kurs(val.date[0], val.date[1], val.id);
+            for (int i = 0; i < val.his.Count; i++)
+            {
+                if (val.his[i] == "") break;
+                textBox2.AppendText(val.his[i] + Environment.NewLine);
+            }
+    }
+
         private void name_valute2(object sender, EventArgs e)
         {
             switch (get_box2())
