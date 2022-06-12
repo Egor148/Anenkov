@@ -196,6 +196,23 @@ namespace kurs_valut
             // Это возвратит только дату без времени
             textBox3.Text += String.Format("{0}", this.monthCalendar1.SelectionRange.Start.ToShortDateString() + " ");
         }
+        public void Replace()
+        {
+            for (int i = 0; i < val.date.Count; i++)
+            {
+                string s = val.date[i];
+
+                s = s.Replace(".", "/");
+                val.date[i] = s;
+            }
+            for (int i = 0; i < val.his.Count; i++)
+            {
+                string s = val.his[i];
+
+                s = s.Replace(".", "/");
+                val.his[i] = s;
+            }
+        }
 
         private void name_valute2(object sender, EventArgs e)
         {
