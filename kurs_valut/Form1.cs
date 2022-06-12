@@ -149,6 +149,12 @@ namespace kurs_valut
                     break;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            kurs();//вызов функции для расчета отношения валют
+        }
+
         private void name_valute2(object sender, EventArgs e)
         {
             switch (get_box2())
