@@ -206,6 +206,7 @@
             this.button5.TabIndex = 46;
             this.button5.Text = "X";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox3
             // 
@@ -223,6 +224,7 @@
             this.button3.TabIndex = 44;
             this.button3.Text = "Добавить дату";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // monthCalendar1
             // 
@@ -231,6 +233,7 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2022, 6, 1, 0, 0, 0, 0), new System.DateTime(2022, 6, 30, 0, 0, 0, 0));
             this.monthCalendar1.TabIndex = 43;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // Form1
             // 

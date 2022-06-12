@@ -175,6 +175,27 @@ namespace kurs_valut
             kurs();//вызов функции для расчета отношения валют
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+                if (val.date.Count != 2)
+                {
+                    val.date.Add(textBox3.Text);
+                }
+                textBox3.Clear();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox3.Clear();
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            this.monthCalendar1.MaxSelectionCount = 1;
+            // Это возвратит только дату без времени
+            textBox3.Text += String.Format("{0}", this.monthCalendar1.SelectionRange.Start.ToShortDateString() + " ");
+        }
 
         private void name_valute2(object sender, EventArgs e)
         {
