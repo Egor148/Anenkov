@@ -175,6 +175,7 @@ namespace kurs_valut
             kurs();//вызов функции для расчета отношения валют
         }
 
+
         private void name_valute2(object sender, EventArgs e)
         {
             switch (get_box2())

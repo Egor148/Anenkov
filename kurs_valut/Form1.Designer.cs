@@ -44,6 +44,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // label4
@@ -192,11 +196,51 @@
             this.textBox2.Size = new System.Drawing.Size(154, 198);
             this.textBox2.TabIndex = 39;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(49, 306);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(31, 29);
+            this.button5.TabIndex = 46;
+            this.button5.Text = "X";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(86, 232);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(225, 56);
+            this.textBox3.TabIndex = 45;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(86, 294);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(225, 41);
+            this.button3.TabIndex = 44;
+            this.button3.Text = "Добавить дату";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(86, 347);
+            this.monthCalendar1.MaxSelectionCount = 30;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2022, 6, 1, 0, 0, 0, 0), new System.DateTime(2022, 6, 30, 0, 0, 0, 0));
+            this.monthCalendar1.TabIndex = 43;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 593);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
@@ -238,6 +282,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
