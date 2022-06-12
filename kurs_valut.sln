@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kurs_valut", "kurs_valut\kurs_valut.csproj", "{B93ACFC0-4959-466C-B178-31D2DA6E5C1D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F6D42F5-1780-406A-BDA1-18DC77C7E9EB}"
-	ProjectSection(SolutionItems) = preProject
-		Valute.cs = Valute.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
